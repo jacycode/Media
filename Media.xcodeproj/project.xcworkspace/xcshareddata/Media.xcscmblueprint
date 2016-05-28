@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "DA63844C950AF09277EAE336BF75D3BA18133361",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "7C8E63E1C10F9BA49019DA7FF52DC2F4368C911F" : 0,
+    "DA63844C950AF09277EAE336BF75D3BA18133361" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "6989C473-40F0-4020-AE6E-D6E2B8A90C82",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "7C8E63E1C10F9BA49019DA7FF52DC2F4368C911F" : "",
+    "DA63844C950AF09277EAE336BF75D3BA18133361" : "Media\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Media",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Media.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jacycode\/Media.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7C8E63E1C10F9BA49019DA7FF52DC2F4368C911F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jacycode\/Media.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DA63844C950AF09277EAE336BF75D3BA18133361"
+    }
+  ]
+}

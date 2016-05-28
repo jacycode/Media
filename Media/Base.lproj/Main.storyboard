@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="4WQ-wN-xAK">
+                                <rect key="frame" x="180" y="100" width="240" height="212"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Xos-RQ-ErH"/>
+                                    <constraint firstAttribute="height" constant="212" id="YPw-ZI-vgy"/>
+                                </constraints>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="poe-Wz-iVM">
+                                <rect key="frame" x="178" y="347" width="244" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Hvd-J6-wbj"/>
+                                    <constraint firstAttribute="width" constant="240" id="U8Y-xf-Xrb"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="slideValueChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="5P2-EL-DdT"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ate-NT-hJ7">
+                                <rect key="frame" x="277" y="419" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="i0C-vI-YAK"/>
+                                    <constraint firstAttribute="height" constant="30" id="i5P-wQ-Z6e"/>
+                                </constraints>
+                                <state key="normal" title="播放"/>
+                                <connections>
+                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tva-dJ-9eu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gue-vK-2Uc">
+                                <rect key="frame" x="180" y="508" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="HsM-LC-uSm"/>
+                                    <constraint firstAttribute="height" constant="30" id="Pl1-PA-kef"/>
+                                </constraints>
+                                <state key="normal" title="录制"/>
+                                <connections>
+                                    <action selector="startRecorder:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cpb-NE-nKB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZ8-CL-lAZ">
+                                <rect key="frame" x="277" y="508" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="17Y-9p-xj4"/>
+                                    <constraint firstAttribute="height" constant="30" id="xd9-ot-PgI"/>
+                                </constraints>
+                                <state key="normal" title="结束"/>
+                                <connections>
+                                    <action selector="stopRecorder:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fjt-j5-5Ct"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N0u-mr-dt6">
+                                <rect key="frame" x="374" y="508" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="WQx-SL-rMp"/>
+                                    <constraint firstAttribute="height" constant="30" id="yQl-ol-VdI"/>
+                                </constraints>
+                                <state key="normal" title="播放"/>
+                                <connections>
+                                    <action selector="playRecorder:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R55-KO-wDw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="Ate-NT-hJ7" firstAttribute="top" secondItem="poe-Wz-iVM" secondAttribute="bottom" constant="42" id="0NX-j3-SS9"/>
+                            <constraint firstItem="N0u-mr-dt6" firstAttribute="leading" secondItem="YZ8-CL-lAZ" secondAttribute="trailing" constant="51" id="3sM-l2-oA9"/>
+                            <constraint firstItem="4WQ-wN-xAK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="G5P-ob-mpA"/>
+                            <constraint firstItem="YZ8-CL-lAZ" firstAttribute="leading" secondItem="gue-vK-2Uc" secondAttribute="trailing" constant="51" id="HYg-m6-7k9"/>
+                            <constraint firstItem="poe-Wz-iVM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jjl-Kl-jkE"/>
+                            <constraint firstItem="gue-vK-2Uc" firstAttribute="top" secondItem="poe-Wz-iVM" secondAttribute="bottom" constant="131" id="ZCQ-8f-5Em"/>
+                            <constraint firstItem="poe-Wz-iVM" firstAttribute="top" secondItem="4WQ-wN-xAK" secondAttribute="bottom" constant="35" id="cgT-97-Tyu"/>
+                            <constraint firstItem="YZ8-CL-lAZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iqE-af-dFg"/>
+                            <constraint firstItem="N0u-mr-dt6" firstAttribute="top" secondItem="poe-Wz-iVM" secondAttribute="bottom" constant="131" id="l1K-p4-12r"/>
+                            <constraint firstItem="Ate-NT-hJ7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ug4-9O-8fF"/>
+                            <constraint firstItem="4WQ-wN-xAK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="xdW-7i-jAP"/>
+                            <constraint firstItem="YZ8-CL-lAZ" firstAttribute="top" secondItem="Ate-NT-hJ7" secondAttribute="bottom" constant="59" id="yNm-GY-cJ9"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="gNF-oW-Ukd" appends="YES" id="VgD-BN-Dw3"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="slider" destination="poe-Wz-iVM" id="I8q-oe-Rz2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="gNF-oW-Ukd">
+                    <connections>
+                        <segue destination="8OS-P1-iU2" kind="presentation" id="PAR-YS-bOA"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-469" y="321"/>
+        </scene>
+        <!--Video PlayerVC-->
+        <scene sceneID="ORg-W7-7XK">
+            <objects>
+                <viewController id="8OS-P1-iU2" customClass="VideoPlayerVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aZg-vT-MQB"/>
+                        <viewControllerLayoutGuide type="bottom" id="Eqs-eS-Fj4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ngf-wn-Z57">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6wj-iu-o34">
+                                <rect key="frame" x="20" y="71" width="560" height="458"/>
+                                <color key="backgroundColor" red="0.28933709819999998" green="1" blue="0.23655160989999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" priority="750" constant="352" id="KvV-Z7-TuN"/>
+                                    <constraint firstAttribute="width" secondItem="6wj-iu-o34" secondAttribute="height" multiplier="11:9" id="UK8-6P-5rJ"/>
+                                    <constraint firstAttribute="height" priority="750" constant="288" id="xeO-vt-siq"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="6wj-iu-o34" firstAttribute="top" relation="greaterThanOrEqual" secondItem="aZg-vT-MQB" secondAttribute="bottom" constant="51" id="049-j8-aWT"/>
+                            <constraint firstItem="Eqs-eS-Fj4" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6wj-iu-o34" secondAttribute="bottom" constant="71" id="8bU-GY-0jE"/>
+                            <constraint firstItem="6wj-iu-o34" firstAttribute="leading" secondItem="ngf-wn-Z57" secondAttribute="leading" priority="800" constant="20" id="tsh-UA-Dec"/>
+                            <constraint firstItem="6wj-iu-o34" firstAttribute="centerX" secondItem="ngf-wn-Z57" secondAttribute="centerX" id="ucE-Zu-6Wh"/>
+                            <constraint firstItem="6wj-iu-o34" firstAttribute="centerY" secondItem="ngf-wn-Z57" secondAttribute="centerY" priority="800" id="wrd-gn-zid"/>
+                            <constraint firstAttribute="trailing" secondItem="6wj-iu-o34" secondAttribute="trailing" priority="800" constant="20" id="yC6-pF-eUQ"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="v9s-dm-xce" appends="YES" id="m4f-GU-DsG"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="videoView" destination="6wj-iu-o34" id="xUq-r3-eDB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bJz-37-Olz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="v9s-dm-xce">
+                    <connections>
+                        <segue destination="NeE-Um-SeT" kind="presentation" id="XvD-Ti-PVQ"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="307" y="321"/>
+        </scene>
+        <!--CameraVC-->
+        <scene sceneID="fHf-2O-II6">
+            <objects>
+                <viewController id="NeE-Um-SeT" customClass="CameraVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EaQ-Yo-Fgt"/>
+                        <viewControllerLayoutGuide type="bottom" id="XDU-Z1-axJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PMI-4r-8dP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RBe-4y-hWN">
+                                <rect key="frame" x="180" y="84" width="240" height="272"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="272" id="CWJ-Qv-iGK"/>
+                                    <constraint firstAttribute="width" constant="240" id="KrQ-Lv-sls"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hLK-4U-4Mq">
+                                <rect key="frame" x="277" y="389" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="FhR-vp-m6a"/>
+                                    <constraint firstAttribute="height" constant="30" id="y0V-xb-JGZ"/>
+                                </constraints>
+                                <state key="normal" title="相册"/>
+                                <connections>
+                                    <action selector="photo:" destination="NeE-Um-SeT" eventType="touchUpInside" id="P1c-k7-1pf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tpd-S2-pow">
+                                <rect key="frame" x="277" y="427" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4VC-YQ-CQR"/>
+                                    <constraint firstAttribute="width" constant="46" id="vb7-Ku-ERD"/>
+                                </constraints>
+                                <state key="normal" title="相机"/>
+                                <connections>
+                                    <action selector="camera:" destination="NeE-Um-SeT" eventType="touchUpInside" id="MU1-5q-eoR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hLK-4U-4Mq" firstAttribute="top" secondItem="RBe-4y-hWN" secondAttribute="bottom" constant="33" id="Ptw-bq-qBs"/>
+                            <constraint firstItem="RBe-4y-hWN" firstAttribute="top" secondItem="EaQ-Yo-Fgt" secondAttribute="bottom" constant="64" id="UP8-De-NOM"/>
+                            <constraint firstItem="Tpd-S2-pow" firstAttribute="centerX" secondItem="PMI-4r-8dP" secondAttribute="centerX" id="VqE-Ly-ctm"/>
+                            <constraint firstItem="RBe-4y-hWN" firstAttribute="centerX" secondItem="PMI-4r-8dP" secondAttribute="centerX" id="cbK-xV-cGl"/>
+                            <constraint firstItem="hLK-4U-4Mq" firstAttribute="centerX" secondItem="PMI-4r-8dP" secondAttribute="centerX" id="oI3-Bp-XVI"/>
+                            <constraint firstItem="Tpd-S2-pow" firstAttribute="top" secondItem="hLK-4U-4Mq" secondAttribute="bottom" constant="8" id="oTH-lY-4ED"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="RBe-4y-hWN" id="ovv-v3-eL8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rjt-Ug-kqj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1107" y="321"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg.jpg" width="206" height="220"/>
+    </resources>
+</document>
